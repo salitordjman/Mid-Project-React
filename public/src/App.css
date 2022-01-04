@@ -1,0 +1,28 @@
+.nav-bar-all {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: #fffaaf;
+}
+
+.nav-bar-ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 6px;
+}
+.nav-bar-li {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav-bar-text {
+  margin: 4px;
+}
+.emoji {
+  font-size: calc(1vh + 1vw + 5px);
+}
