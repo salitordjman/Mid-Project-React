@@ -1,29 +1,28 @@
-* {
-  background: navajowhite;
+.nav-bar-all {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: #fffaaf;
 }
-.all {
-  font-size: 25px;
-  padding: 5vh;
+
+.nav-bar-ul {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 6px;
 }
-.img1,
-.img2 {
-  margin: 2.5vh;
-  border: 2px solid black;
-  height: 40vh;
-  width: 25vw;
+.nav-bar-li {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-img {
-  height: 100%;
-  width: 100%;
-  object-fit: fill;
+.nav-bar-text {
+  margin: 4px;
 }
-button {
-  background: rgb(206, 206, 206);
-  height: 25px;
-  margin: 10px;
-}
-input {
-  background-color: honeydew;
+.emoji {
+  font-size: calc(1vh + 1vw + 5px);
 }
