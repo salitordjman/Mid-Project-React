@@ -111,6 +111,10 @@ h1 {
 }
 .li-item-category {
   width: calc(15vh + 15vw + 175px);
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  margin-right: 8px;
 }
 .done {
   background: rgb(202, 246, 202);

@@ -21,6 +21,7 @@ function CreateListing() {
     sale: false,
     location: "",
     description: "",
+    phone: "",
   });
 
   const {
@@ -32,6 +33,7 @@ function CreateListing() {
     sale,
     location,
     description,
+    phone,
   } = formData;
 
   const auth = getAuth();
@@ -187,6 +189,20 @@ function CreateListing() {
           >
             Used
           </button>
+          <div>
+            <label>Phone</label>
+            <br />
+            <input
+              className={"input-field"}
+              type="text"
+              id="phone"
+              value={phone}
+              onChange={onMutate}
+              maxLength="18"
+              minLength="8"
+              required
+            />
+          </div>
           <div>
             <label>Model</label>
             <br />
