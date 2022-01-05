@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { getAuth, updateProfile } from "firebase/auth";
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 import { updateDoc, doc } from "firebase/firestore";
 import { db } from "../firebase.config";
 
@@ -81,6 +81,15 @@ function Profile() {
             />
           </div>
         </form>
+        <div className="categories">
+          <Link
+            style={{ marginTop: "15px" }}
+            className="links-up-in"
+            to="/create-listing"
+          >
+            💰 Sell your product 💰
+          </Link>
+        </div>
       </main>
     </div>
   );

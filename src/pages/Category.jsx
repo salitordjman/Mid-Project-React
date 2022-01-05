@@ -11,9 +11,10 @@ import {
 import { db } from "../firebase.config";
 import ListingItem from "../components/ListingItem";
 
-function Sale() {
+function Category() {
   const [listings, setListings] = useState(null);
   const [loading, setLoading] = useState(true);
+
   const params = useParams();
   useEffect(() => {
     const fetchListings = async () => {
@@ -21,7 +22,7 @@ function Sale() {
         const listingsRef = collection(db, "listings");
         const q = query(
           listingsRef,
-          where("sale", "==", true),
+          where("type", "==", params.categoryName),
           orderBy("timestamp", "desc"),
           limit(10)
         );
@@ -42,12 +43,16 @@ function Sale() {
     };
 
     fetchListings();
-  }, []);
+  }, [params.categoryName]);
 
   return (
     <div className="page">
       <header>
-        <h2 className="pageHeader">Sale</h2>
+        <h2 className="pageHeader">
+          {params.categoryName === "new"
+            ? "New cell phones"
+            : "Used cell phones"}
+        </h2>
       </header>
       {loading ? (
         <h1>Loading......</h1>
@@ -72,4 +77,4 @@ function Sale() {
   );
 }
 
-export default Sale;
+export default Category;

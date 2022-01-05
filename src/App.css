@@ -94,3 +94,33 @@ h1 {
   cursor: pointer;
   margin: 30px 0;
 }
+.img-categorries {
+  height: calc(8vh + 8vw + 75px);
+  width: 100%;
+  border-radius: 25px;
+  object-fit: cover;
+}
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.link-home {
+  margin: 0 30px;
+}
+.li-item-category {
+  width: calc(15vh + 15vw + 175px);
+}
+.done {
+  background: rgb(202, 246, 202);
+  border-radius: 15px;
+}
+.sign-new {
+  color: rgb(255, 58, 58);
+  font-weight: bolder;
+  cursor: pointer;
+  margin: 10px;
+  padding: 8px;
+  font-size: calc(0.8vh + 0.8vw + 9px);
+}
