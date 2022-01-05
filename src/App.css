@@ -1,9 +1,33 @@
+:root {
+  --nav-height: calc(3vh + 3vw + 23px);
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fbdec5;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+}
+button {
+  outline: none;
+  border: none;
+  background: none;
+}
+.page {
+  padding: 0 1.5rem;
+  padding-top: var(--nav-height);
+}
+h1 {
+  margin: 0;
+}
 .nav-bar-all {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  background-color: #fffaaf;
+  right: 0;
+  height: var(--nav-height);
+  z-index: 100;
 }
 
 .nav-bar-ul {
@@ -19,10 +43,54 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 5px;
 }
 .nav-bar-text {
   margin: 4px;
+  font-size: calc(1vh + 1vw + 5px);
 }
 .emoji {
   font-size: calc(1vh + 1vw + 5px);
+}
+.input-field {
+  margin: 10px;
+  border: none;
+  border-radius: 15px;
+  height: 35px;
+  width: 40%;
+  padding: 0 15px;
+  font-size: 15px;
+}
+.links {
+  text-decoration: none;
+  color: rgb(139, 59, 59);
+  font-size: calc(0.8vh + 0.8vw + 5px);
+  font-weight: bolder;
+}
+.links-up-in {
+  color: rgb(0, 0, 0);
+  font-size: calc(1vh + 1vw + 5px);
+}
+.div-links-up-in {
+  width: 100vw;
+  text-align: center;
+}
+.sign {
+  color: rgb(255, 58, 58);
+  font-weight: bolder;
+  cursor: pointer;
+  margin: 30px 0;
+  font-size: calc(1vh + 1vw + 9px);
+}
+.profile-flex {
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.sign-change {
+  color: green;
+  cursor: pointer;
+  margin: 30px 0;
 }

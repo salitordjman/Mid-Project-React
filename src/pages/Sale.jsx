@@ -1,6 +1,6 @@
 function Sale() {
   return (
-    <div>
+    <div className="page">
       <h1>Sale</h1>
     </div>
   );
