@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import OAuth from "../components/OAuth";
 
 function SignIn() {
   const [showPassword, setShowPassword] = useState(false);
@@ -76,6 +77,7 @@ function SignIn() {
           </div>
         </div>
       </form>
+      <OAuth />
       <div className="div-links-up-in">
         <Link to="/sign-up" className="links links-up-in">
           Sign Up Instead

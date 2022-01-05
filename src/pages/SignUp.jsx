@@ -8,6 +8,8 @@ import {
 import { setDoc, doc, serverTimestamp } from "firebase/firestore";
 
 import { db } from "../firebase.config";
+import OAuth from "../components/OAuth";
+
 function SignUp() {
   const history = useHistory();
   const [showPassword, setShowPassword] = useState(false);
@@ -103,6 +105,7 @@ function SignUp() {
           </button>
         </div>
       </form>
+      <OAuth />
       <div className="div-links-up-in">
         <Link to="/sign-in" className="links links-up-in">
           Sign In Instead
