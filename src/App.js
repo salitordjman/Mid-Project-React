@@ -9,6 +9,7 @@ import Profile from "./pages/Profile";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import CreateListing from "./pages/CreateListing";
+import EditListing from "./pages/EditListing";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/sign-in" exact component={SignIn} />
         <Route path="/sign-up" exact component={SignUp} />
         <Route path="/create-listing" exact component={CreateListing} />
+        <Route path="/edit-listing/:listingId" exact component={EditListing} />
       </Router>
     </>
   );

@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-// import { useParams } from "react-router-dom";
 import {
   collection,
   getDocs,
@@ -14,7 +13,6 @@ import ListingItem from "../components/ListingItem";
 function Sale() {
   const [listings, setListings] = useState(null);
   const [loading, setLoading] = useState(true);
-  // const params = useParams();
   useEffect(() => {
     const fetchListings = async () => {
       try {

@@ -128,3 +128,8 @@ h1 {
   padding: 8px;
   font-size: calc(0.8vh + 0.8vw + 9px);
 }
+.emoji-delete-edit {
+  font-weight: bolder;
+  font-size: calc(1.5vh + 1.5vw + 20px);
+  cursor: pointer;
+}

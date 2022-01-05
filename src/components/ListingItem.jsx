@@ -1,4 +1,4 @@
-function ListingItem({ listing, id }) {
+function ListingItem({ listing, id, onEdit, onDelete }) {
   return (
     <li className="li-item-category">
       <img
@@ -41,7 +41,26 @@ function ListingItem({ listing, id }) {
         </p>
         <p> Phone: {listing.phone}</p>
       </div>
-      {/* </Link> */}
+      <div className="categories">
+        {onDelete && (
+          <span
+            style={{ color: "rgb(255, 58, 58)", paddingRight: "5px" }}
+            className="emoji-delete-edit"
+            onClick={() => onDelete(listing.id, listing.name)}
+          >
+            🗑
+          </span>
+        )}
+        {onEdit && (
+          <span
+            style={{ color: "green", fontSize: "calc(0.8vh + 0.8vw + 16px)" }}
+            className="emoji-delete-edit"
+            onClick={() => onEdit(id)}
+          >
+            📝
+          </span>
+        )}
+      </div>
     </li>
   );
 }
