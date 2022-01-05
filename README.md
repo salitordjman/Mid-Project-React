@@ -1,5 +1,5 @@
 # netlify
-https://app.netlify.com/sites/sali-mid-project-react/overview
+https://sali-mid-project-react.netlify.app/
 
 # Getting Started with Create React App
 
